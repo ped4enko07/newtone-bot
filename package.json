@@ -20,6 +20,7 @@
     ]
   },
   "dependencies": {
+    "node-telegram-bot-api": "^0.28.0",
     "rc": "^1.2.1"
   }
 }
