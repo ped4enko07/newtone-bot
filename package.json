@@ -18,5 +18,8 @@
     "extends": [
       "airbnb-base"
     ]
+  },
+  "dependencies": {
+    "rc": "^1.2.1"
   }
 }
