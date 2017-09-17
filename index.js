@@ -1,11 +1,9 @@
 const { token } = require('./config');
-
 const TelegramBot = require('node-telegram-bot-api');
+const Router = require('./router');
 
 const bot = new TelegramBot(token, { polling: true });
 
-bot.on('text', (msg) => {
-  const fromId = msg.from.id;
-  bot.sendMessage(fromId, `${msg.from} hello world!`);
-});
+Router(bot);
 
+console.log('NewTone Bot start');
